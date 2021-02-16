@@ -1,13 +1,11 @@
 <html>
 <!-- Google  -->
 <form id="form1" method=get action="http://www.google.co.jp/search">
-<table bgcolor=black><tr><td>
-<input id="sbox" type=text name=q size=31 maxlength=255 value="">
+<input id="sbox" name=q type=text value="">
 <input type=hidden name=ie value=UTF-8>
 <input type=hidden name=oe value=UTF-8>
 <input type=hidden name=hl value="ja">
 <input id="sbtn" type=submit name=btnG value="検索">
-</td></tr></table>
 </form>
 <!-- Google -->
 <head>
@@ -32,7 +30,8 @@
             height:50px;/*検索ボックスの高さ*/	
             padding:0 10px;/*テキスト位置調整*/	 
             border-radius:2px 0 0 2px;/*検索ボックスの角を丸める*/		
-            background:#eee;/*検索ボックスの背景カラー*/		
+            background:white;/*検索ボックスの背景カラー*/	
+            width:270px;
             }
             /*検索ボタン*/
         #sbtn{
