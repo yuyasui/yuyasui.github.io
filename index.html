@@ -1,62 +1,55 @@
 <html>
-<!-- Google  -->
+    <!-- Google  -->
 <form id="form1" method=get action="https://www.google.co.jp/search">
-<input id="sbox" name=q type=text value="">
+        <input id="sbox" name=q type=text value="">
 <input type=hidden name=ie value=UTF-8>
 <input type=hidden name=oe value=UTF-8>
 <input type=hidden name=hl value="ja">
-<input id="sbtn" type=submit name=btnG value="検索">
+        <input id="sbtn" type=submit name=btnG value="">
 </form>
 <!-- Google -->
+     <!-- その他のコンテンツ -->
 <head>
     <meta http-equiv="content-type" chartset="UTF-8">
     <style>
         body{
-            background: lightgray;
+            background: lightblue;
             font-family: 'Impact',sans-serif;
             -webkit-appearance: none;
         }
-        input {
-            -webkit-appearance: none;
-            border-radius: 0;
-            display: inline-block;
-            }
-        /*フォーム全体*/
-        #form1{
-        margin-bottom:15px;/*フォームの下に余白*/
-        display:inline-block;
-        margin-top: 10%;
-            width:100%;
-        }
         /*検索ボックス*/
-        #sbox{
-            top:40%; 	
+        #form1{
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        #sbox{	
             outline:0;/*クリック時の青い枠線消す*/	
-            height:8%;/*検索ボックスの高さ*/	
-            padding:0 1%;/*テキスト位置調整*/	 
-            background:white;/*検索ボックスの背景カラー*/	
-            width:50%;
-            border: none;
-            margin-left: 10%;
+            height:30px;/*検索ボックスの高さ*/	
+            padding:0 4px;/*テキスト位置調整*/	 
+            background:lightblue;/*検索ボックスの背景カラー*/	
+            width:270px;
+            border: 2px solid white;
+            border-right: none;
         }
             /*検索ボタン*/
         #sbtn{
-            width:10%;/*検索ボタンの横幅*/ 
-            height:8%;/*検索ボタンの縦幅*/ 
-            top:100px;
-            background:lightblue;/*検索ボタンの背景カラー*/ 
+            width:30px;/*検索ボタンの横幅*/ 
+            height:30px;/*検索ボタンの縦幅*/ 
+            background:white;/*検索ボタンの背景カラー*/ 
             border:none;/*検索ボタンの枠線を消す*/ 
             color:#fff;/*検索ボタンのテキストカラー*/ 
             font-weight:bold;/*検索ボタンのテキスト太字*/ 
-            font-size:98%;/*検索ボタンのフォントサイズ*/ 
+            font-size:15px;/*検索ボタンのフォントサイズ*/ 
+            border: 2px solid white;
         }
         /*検索ボタンマウスオーバー時*/
         #sbtn:hover{
             color:#666;/*検索ボタンマウスオーバー時のフォントカラー*/ 
         }
-    </style>
 </head>
 <body>
-    <div id="form1"></div>
+
 </body>
 </html>
