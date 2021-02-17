@@ -1,55 +1,51 @@
 <html>
-
+    <!-- Google  -->
+<form id="form1" method=get action="https://www.google.co.jp/search">
+        <input id="sbox" name=q type=text value="">
+<input type=hidden name=ie value=UTF-8>
+<input type=hidden name=oe value=UTF-8>
+<input type=hidden name=hl value="ja">
+        <input id="sbtn" type=submit name=btnG value="">
+</form>
+<!-- Google -->
+     <!-- その他のコンテンツ -->
 <head>
     <meta http-equiv="content-type" chartset="UTF-8">
     <style>
         body{
-            background-image: url(background.png);
-            background-size:cover;
-            font-family: 'Cambria','Baskerville','Bodoni 72',sans-serif;
+            background: lightblue;
+            font-family: 'Impact',sans-serif;
             -webkit-appearance: none;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
         }
         /*検索ボックス*/
         #form1{
-             display: inline-flex;
+             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 0;
-            margin-left: 0.5%;
+            margin-top: 20px;
             -webkit-appearance: none;
-            width:98%;
-            border: 7px double black;
-            border-left: none;
-            border-right: none;
-            position:absolute;
-            z-index: 100;
         }
         #sbox{	
             outline:0;/*クリック時の青い枠線消す*/	
-            height:60px;/*検索ボックスの高さ*/	
+            height:30px;/*検索ボックスの高さ*/	
             padding:0 4px;/*テキスト位置調整*/	 
-            background:transparent;/*検索ボックスの背景カラー*/	
-            width:98%;
-            border: none;
+            background:lightblue;/*検索ボックスの背景カラー*/	
+            width:270px;
+            border: 2px solid white;
             border-right: none;
             -webkit-appearance: none;
             border-radius:0
         }
-        #sbox:focus{
-            background: gainsboro;
-        }
             /*検索ボタン*/
         #sbtn{
-            width:210px;/*検索ボタンの横幅*/ 
-            height:60px;/*検索ボタンの縦幅*/ 
-            background:transparent;/*検索ボタンの背景カラー*/ 
+            width:30px;/*検索ボタンの横幅*/ 
+            height:30px;/*検索ボタンの縦幅*/ 
+            background:white;/*検索ボタンの背景カラー*/ 
             border:none;/*検索ボタンの枠線を消す*/ 
             color:#fff;/*検索ボタンのテキストカラー*/ 
             font-weight:bold;/*検索ボタンのテキスト太字*/ 
             font-size:15px;/*検索ボタンのフォントサイズ*/ 
+            border: 2px solid white;
             -webkit-appearance: none;
             border-radius:0
         }
@@ -59,100 +55,73 @@
         }
         /*時計*/
                 #clock-01{
-            font-size: 15px;
-            font-weight:bold;
-            color: black;
-            position: relative;
-            text-align: right;
-            top: 45px;
-            margin-right: 15px;
+            font-size: 110px;
         }  
-        /*ボタン*/
+        #clock-02{
+            font-size: 30px;
+        }
+        #clock-parent {
+            text-align: center;
+            color: white;
+            display: block;
+            vertical-align: middle;
+        }
         .btn1 {
             border-radius: 5px;
-            background-color: transparent;
+            background-color: lightblue;
             padding: 10px;
             text-decoration: none;
-            color: black;
-            border: none;
-            position: absolute;
-            top:50%;
+            color: white;
+            border: 2px solid white;
             }
-        .btn2 {
+                .btn2 {
             border-radius: 5px;
-            background-color: transparent;
+            background-color: lightblue;
             padding: 10px;
             text-decoration: none;
-            color: black;
-            border: 2px solid black;
-            position: absolute;
-            top:50%;
+            color: white;
+            border: 2px solid white;
             }
-        .btn3 {
+                .btn3 {
             border-radius: 5px;
-            background-color: transparent;
+            background-color: lightblue;
             padding: 10px;
             text-decoration: none;
-            color: black;
-            border: 2px solid black;
-            position: absolute;
-            top:50%;
+            color: white;
+            border: 2px solid white;
             }
-        .btn4 {
+                .btn4 {
             border-radius: 5px;
-            background-color: transparent;
+            background-color: lightblue;
             padding: 10px;
             text-decoration: none;
-            color: black;
-            border: 2px solid black;
-            position: absolute;
-            top:50%;
+            color: white;
+            border: 2px solid white;
             }
-        .btn5 {
+            .btn5 {
             border-radius: 5px;
-            background-color: transparent;
+            background-color: lightblue;
             padding: 10px;
             text-decoration: none;
-            color: black;
-            border: 2px solid black;
-            position: absolute;
-            top:50%;
+            color: white;
+            border: 2px solid white;
             }
-        .btn6 {
+            .btn6 {
             border-radius: 5px;
-            background-color: transparent;
+            background-color: lightblue;
             padding: 10px;
             text-decoration: none;
-            color: black;
-            border: 2px solid black;
-            position: absolute;
-            top:50%;
+            color: white;
+            border: 2px solid white;
             }
-        .btn7 {
+            .btn7 {
             border-radius: 5px;
-            background-color: transparent;
+            background-color: lightblue;
             padding: 10px;
             text-decoration: none;
-            color: black;
-            border: 2px solid black;
-            margin-left: 30%;
-            position: absolute;
-            top:50%;
+            color: white;
+            border: 2px solid white;
             }
-        #Uedacampus{
-            position: absolute;
-            top:50%;
-            display:flex;
-        }
-        #headline{
-            text-align: center;
-            font-size: 50px;
-            font-weight:bold;
-            top:-62px;
-            position:relative;
-            z-index: 1;
-            color: black;
-        }
     </style>
     <script>
 function clock() {
@@ -172,10 +141,14 @@ if(min < 10) { min = "0" + min; }
 if(sec < 10) { sec = "0" + sec; }
 
 // フォーマット①
-var clock1 = year + '/' + month + '/' + date + '/' + myDay[day] + '/' + hour + ':' + min ;
+var clock1 = hour + ':' + min ;
 
 document . getElementById( 'clock-01' ) . innerHTML= clock1 . toLocaleString(); // div id="clock-01"
 
+// フォーマット②
+var clock2 = year + '/' + month + '/' + date + '/' + myDay[day] ;
+
+document . getElementById( 'clock-02' ) . innerHTML= clock2 . toLocaleString(); // div id="clock-02"
 
 // 1000ミリ秒ごとに処理を実効
 window . setTimeout( "clock()", 1000);
@@ -184,28 +157,16 @@ window . onload = clock;
 </script>
 </head>
 <body>
-            <!-- Google  -->
-<form id="form1" method=get action="https://www.google.co.jp/search">
-        <input id="sbox" name=q type=text value="" >
-<input type=hidden name=ie value=UTF-8>
-<input type=hidden name=oe value=UTF-8>
-<input type=hidden name=hl value="ja">
-        <input id="sbtn" type=submit name=btnG value="">
-        </form>
-<!-- Google -->
-        <div id="clock-01"></div>
-   <a href="https://www.youtube.com/?gl=JP" class="btn1">YouTube<br>&thinsp;&thinsp;&thinsp;&thinsp;test211111111111</a>
-   <a href="https://www.amazon.co.jp/Prime-Video/b/ref=as_li_ss_tl?ie=UTF8&node=3535604051&linkCode=sl2&tag=phileweb-22&linkId=37f478ba98228668440a3eff02b3cecd&language=ja_JP" class="btn2">PrimeVideo</a>
+    <div id="clock-parent">
+    <div id="clock-01"></div>
+    <!-- または -->
+        <div id="clock-02"></div></div>
+    <a href="https://www.youtube.com/?gl=JP" class="btn1">YouTube</a>
+    <a href="https://www.amazon.co.jp/Prime-Video/b/ref=as_li_ss_tl?ie=UTF8&node=3535604051&linkCode=sl2&tag=phileweb-22&linkId=37f478ba98228668440a3eff02b3cecd&language=ja_JP" class="btn2">PrimeVideo</a>
     <a href="https://calendar.google.com/calendar/u/0/r/month?tab=wc&pli=1" class="btn3">Calender</a>
     <a href="https://trello.com/user41758824/boards" class="btn4">Trello</a>
     <a href="https://shinshuuniversity.sharepoint.com/sites/acsu/SitePages/Home.aspx?wa=wsignin1.0" class="btn5">ACSU</a>
     <a href="https://timetable.ealps.shinshu-u.ac.jp/portal/#/" class="btn6">eALPS</a>
     <a href="https://mail.google.com/mail/u/0/#inbox" class="btn7">Gmail</a>
-<form action="https://timetable.ealps.shinshu-u.ac.jp/portal/#/" method="post">
-<p id="Uedacampus">
-<input type="image" src="Uedacampus.png" alt="eALPS" width="240" height="166">
-</p>
-<p id="headline">HOMEPAGE</p>
-</form>
 </body>
 </html>
