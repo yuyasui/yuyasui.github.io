@@ -1,14 +1,5 @@
 <html>
-    <!-- Google  -->
-<form id="form1" method=get action="https://www.google.co.jp/search">
-        <input id="sbox" name=q type=text value="">
-<input type=hidden name=ie value=UTF-8>
-<input type=hidden name=oe value=UTF-8>
-<input type=hidden name=hl value="ja">
-        <input id="sbtn" type=submit name=btnG value="">
-</form>
-<!-- Google -->
-     <!-- その他のコンテンツ -->
+
 <head>
     <meta http-equiv="content-type" chartset="UTF-8">
     <style>
@@ -16,36 +7,52 @@
             background: lightblue;
             font-family: 'Impact',sans-serif;
             -webkit-appearance: none;
+            width: 95%;
+            height: 95%;
+            overflow: visible;
+            display: block;
+            margin-left: 2.5%;
+            
         }
         /*検索ボックス*/
         #form1{
-             display: flex;
+             display: inline-flex;
             justify-content: center;
             align-items: center;
-            margin-top: 20px;
+            margin-top: 1.5em;
             -webkit-appearance: none;
+            width:95%;
+            height: 50px;
+            border: none;
+            position: absolute;
+            z-index: 100;
         }
         #sbox{	
             outline:0;/*クリック時の青い枠線消す*/	
-            height:30px;/*検索ボックスの高さ*/	
+            height:100%;/*検索ボックスの高さ*/	
             padding:0 4px;/*テキスト位置調整*/	 
-            background:lightblue;/*検索ボックスの背景カラー*/	
-            width:270px;
-            border: 2px solid white;
+            background:transparent;/*検索ボックスの背景カラー*/	
+            width:330px;
+            border:  5px solid white;
             border-right: none;
             -webkit-appearance: none;
-            border-radius:0
+            border-radius:0;
+            margin-left: 0;
+        }
+        #sbox:focus{
+            background: lightblue;
+            font-size: 20px;
+            font-family: 'Impact',sans-serif;
         }
             /*検索ボタン*/
         #sbtn{
-            width:30px;/*検索ボタンの横幅*/ 
-            height:30px;/*検索ボタンの縦幅*/ 
-            background:white;/*検索ボタンの背景カラー*/ 
-            border:none;/*検索ボタンの枠線を消す*/ 
+            width:50px;/*検索ボタンの横幅*/ 
+            height:100%;/*検索ボタンの縦幅*/ 
+            background:transparent;/*検索ボタンの背景カラー*/ 
+            border: 5px solid white;/*検索ボタンの枠線を消す*/ 
             color:#fff;/*検索ボタンのテキストカラー*/ 
             font-weight:bold;/*検索ボタンのテキスト太字*/ 
             font-size:15px;/*検索ボタンのフォントサイズ*/ 
-            border: 2px solid white;
             -webkit-appearance: none;
             border-radius:0
         }
@@ -55,73 +62,142 @@
         }
         /*時計*/
                 #clock-01{
-            font-size: 110px;
+            font-size: 1.3em;
+            font-weight:bold;
+            color: white;
+            text-align: center;
         }  
         #clock-02{
-            font-size: 30px;
-        }
-        #clock-parent {
-            text-align: center;
+            font-size: 5em;
+            font-weight:bold;
             color: white;
-            display: block;
-            vertical-align: middle;
+            display:block;
+            text-align: center;
         }
+        #clock-03{
+            font-size:0.1em;
+            font-weight:bold;
+            color: lightblue;
+            display:block;
+            text-align: center;
+            height:15%;
+        }
+        #clock-parent{
+            display:block;
+        }
+        /*ボタン*/
         .btn1 {
             border-radius: 5px;
-            background-color: lightblue;
+            background-color: transparent;
             padding: 10px;
             text-decoration: none;
             color: white;
+            border: none;
+            top: 7em;
             border: 2px solid white;
+            position:relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width:20%;
+            text-align: center;
+            margin-left: 17.5%;
+            height:5%;
             }
-                .btn2 {
+        .btn2 {
             border-radius: 5px;
-            background-color: lightblue;
+            background-color: transparent;
             padding: 10px;
             text-decoration: none;
             color: white;
             border: 2px solid white;
+            top:7em;
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width:20%;
+            height:5%;
             }
-                .btn3 {
+        .btn3 {
             border-radius: 5px;
-            background-color: lightblue;
+            background-color: transparent;
             padding: 10px;
             text-decoration: none;
             color: white;
             border: 2px solid white;
+            top: 7em;
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width:20%;
+            height:5%;
             }
-                .btn4 {
+        .btn4 {
             border-radius: 5px;
-            background-color: lightblue;
+            background-color: transparent;
             padding: 10px;
             text-decoration: none;
             color: white;
             border: 2px solid white;
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width:20%;
+            top:8em;
+            margin-left: 17.5%;
+            height:5%;
             }
-            .btn5 {
+        .btn5 {
             border-radius: 5px;
-            background-color: lightblue;
+            background-color: transparent;
             padding: 10px;
             text-decoration: none;
             color: white;
             border: 2px solid white;
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width:20%;
+            top:8em;
+            height:5%;
             }
-            .btn6 {
+        .btn6 {
             border-radius: 5px;
-            background-color: lightblue;
+            background-color: transparent;
             padding: 10px;
             text-decoration: none;
             color: white;
             border: 2px solid white;
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width:20%;
+            top:8em;
+            height:5%;
             }
-            .btn7 {
+        .btn7 {
             border-radius: 5px;
-            background-color: lightblue;
+            background-color: transparent;
             padding: 10px;
             text-decoration: none;
             color: white;
             border: 2px solid white;
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width:20%;
+            top:9em;
+            margin-left: 40%;
+            height: 5%;
             }
+        #invisible{
+        }
     </style>
     <script>
 function clock() {
@@ -141,14 +217,14 @@ if(min < 10) { min = "0" + min; }
 if(sec < 10) { sec = "0" + sec; }
 
 // フォーマット①
-var clock1 = hour + ':' + min ;
+var clock1 = year + '/' + month + '/' + date + '/' + myDay[day] ;
+var clock2 = hour + ':' + min;
+var clock3 = hour + ':' + min;
 
 document . getElementById( 'clock-01' ) . innerHTML= clock1 . toLocaleString(); // div id="clock-01"
-
-// フォーマット②
-var clock2 = year + '/' + month + '/' + date + '/' + myDay[day] ;
-
 document . getElementById( 'clock-02' ) . innerHTML= clock2 . toLocaleString(); // div id="clock-02"
+document . getElementById( 'clock-03' ) . innerHTML= clock3 . toLocaleString(); // div id="clock-03"
+
 
 // 1000ミリ秒ごとに処理を実効
 window . setTimeout( "clock()", 1000);
@@ -157,12 +233,22 @@ window . onload = clock;
 </script>
 </head>
 <body>
-    <div id="clock-parent">
-    <div id="clock-01"></div>
-    <!-- または -->
-        <div id="clock-02"></div></div>
-    <a href="https://www.youtube.com/?gl=JP" class="btn1">YouTube</a>
-    <a href="https://www.amazon.co.jp/Prime-Video/b/ref=as_li_ss_tl?ie=UTF8&node=3535604051&linkCode=sl2&tag=phileweb-22&linkId=37f478ba98228668440a3eff02b3cecd&language=ja_JP" class="btn2">PrimeVideo</a>
+
+    <div id="clock-03"></div>
+<div id="clock-parent">
+    <div id="clock-02"></div>
+        <div id="clock-01"></div></div>
+                <!-- Google  -->
+<form id="form1" method=get action="https://www.google.co.jp/search">
+        <input id="sbox" name=q type=text value="" >
+<input type=hidden name=ie value=UTF-8>
+<input type=hidden name=oe value=UTF-8>
+<input type=hidden name=hl value="ja">
+        <input id="sbtn" type=submit name=btnG value="">
+        </form>
+<!-- Google -->
+   <a href="https://www.youtube.com/?gl=JP" class="btn1">YouTube</a>
+   <a href="https://www.amazon.co.jp/Prime-Video/b/ref=as_li_ss_tl?ie=UTF8&node=3535604051&linkCode=sl2&tag=phileweb-22&linkId=37f478ba98228668440a3eff02b3cecd&language=ja_JP" class="btn2">PrimeVideo</a>
     <a href="https://calendar.google.com/calendar/u/0/r/month?tab=wc&pli=1" class="btn3">Calender</a>
     <a href="https://trello.com/user41758824/boards" class="btn4">Trello</a>
     <a href="https://shinshuuniversity.sharepoint.com/sites/acsu/SitePages/Home.aspx?wa=wsignin1.0" class="btn5">ACSU</a>
